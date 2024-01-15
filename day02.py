@@ -7,7 +7,7 @@ input_number='1'
 Celsius = 0.0
 Fahrenheit = 0.0  #변수 초기화
 
-while input_number in {'1','2'}:
+while 1:
     input_number = input(' Choose The Option 1)Celsius to Fahrenheit 2)Fahrenheit to Celsius 3)Quit Program')
     if input_number=='1':
         Celsius=float(input('Celsius = '))
