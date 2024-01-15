@@ -21,4 +21,4 @@ while 1:
         print("Program ends")
         break
     elif (input_number in {'1','2','3'})==0:
-        print('You choose wrong number. Choose in 1,2,3')
+        print('You choosed wrong number. Choose in 1,2,3')
