@@ -1,20 +1,16 @@
-#(섭씨°C × 9/5) + 32 = 화씨°F
-#(화씨°F − 32) × 5/9 = 섭씨°C
-#Celsius
-#Fahrenheit
+#소수를 판별하는 프로그램
+
+number=int(input('숫자를 입력하시오 = '))
+is_prime=True
+a=2
+while a<number:
+    if number%a==0:
+       is_prime=False
+       break
+    a=a+1
 
 
-
-while 1:
-    input_number = input(' Choose The Option 1)Celsius to Fahrenheit 2)Fahrenheit to Celsius 3)Quit Program')
-    if input_number=='1':
-        Celsius=float(input('Celsius = '))
-        print(f'Fahrenheit = {float((Celsius* 9/5)+ 32)}°F')
-    elif input_number=='2':
-        Fahrenheit = float(input('Fahrenheit = '))
-        print(f'Celsius = {float((Fahrenheit-32)*5/9)}°C')
-    elif input_number=='3':
-        print("Program ends")
-        break
-    else:
-        print('You choosed wrong number. Choose in 1,2,3')
+if is_prime:
+   print(f'{number}은 소수입니다.')
+else:
+   print(f'{number}은 소수가 아닙니다.')
