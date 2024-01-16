@@ -11,12 +11,10 @@ while 1:
     input_number = input(' Choose The Option 1)Celsius to Fahrenheit 2)Fahrenheit to Celsius 3)Quit Program')
     if input_number=='1':
         Celsius=float(input('Celsius = '))
-        Fahrenheit=float((Celsius* 9/5)+ 32)
-        print(f'Fahrenheit = {Fahrenheit}°F')
+        print(f'Fahrenheit = {float((Celsius* 9/5)+ 32)}°F')
     elif input_number=='2':
         Fahrenheit = float(input('Fahrenheit = '))
-        Celsius=float((Fahrenheit-32)*5/9)
-        print(f'Celsius = {Celsius}°C')
+        print(f'Celsius = {float((Fahrenheit-32)*5/9)}°C')
     elif input_number=='3':
         print("Program ends")
         break
