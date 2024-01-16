@@ -12,6 +12,7 @@
 #        print('too low')
 #    elif number == guess_me:
 #        print('found it!')
+#        break
 #    else:
 #        print('oops')
 #        break
@@ -23,6 +24,7 @@
 #         print('to low')
 #     elif number == guess_me:
 #         print('found it!')
+#         break
 #     else:
 #         print('oops')
 #         break
