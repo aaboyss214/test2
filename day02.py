@@ -48,7 +48,7 @@ while 1:
                 continue
             else:
                 i=2
-                while i*i < number:  #####계산 과정을 줄인 것 한 번 다시 생각해보자
+                while i*i <= number:  #####계산 과정을 줄인 것 한 번 다시 생각해보자
                     if number % i == 0:
                         is_prime = False
                         break
