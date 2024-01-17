@@ -15,7 +15,7 @@ while 1:
     elif input_number=='2':
         Fahrenheit = float(input('Fahrenheit = '))
         print(f'Celsius = {float((Fahrenheit-32)*5/9)}°C')
-    ################################
+    ################################짝수로는 나눌 필요없다
     elif input_number=='3':
         RandonNumber = int(input('Input number'))
 
@@ -32,7 +32,7 @@ while 1:
                 print('This is prime number')
             else:
                 print('This is not prime number')
-    ################################
+    ################################여기선 간소화해야한다
     elif input_number == '4':
         section = input('input numbers').split()
         n1 = int(section[0])
@@ -47,10 +47,12 @@ while 1:
             if number < 2:
                 continue
             else:
-                for i in range(2, number):
+                i=2
+                while i*i < number:  #####계산 과정을 줄인 것 한 번 다시 생각해보자
                     if number % i == 0:
                         is_prime = False
                         break
+                    i=i+1
                 if is_prime:
                     print(number, end=' ')
         print()
