@@ -39,12 +39,14 @@ while 1:
             print('This is not prime number')
     ################################
     elif input_number == '4':
-        section = input('input numbers').split()
-        n1 = int(section[0])
-        n2 = int(section[1])
+        # section = input('input numbers').split()
+        # n1 = int(section[0])
+        # n2 = int(section[1])
+        n1, n2 = map(int, input('input numbers').split())
 
-        if n1 > n2:
-            n1, n2 = n2, n1
+        # if n1 > n2:
+        #     n1, n2 = n2, n1
+        n1, n2 = min(n1, n2), max(n1, n2)
 
         for number in range(n1, n2 + 1):
 
